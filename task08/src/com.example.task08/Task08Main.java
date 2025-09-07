@@ -1,4 +1,5 @@
 package com.example.task08;
+
 import java.util.Arrays;
 
 public class Task08Main {
@@ -13,10 +14,9 @@ public class Task08Main {
 
     static long mult(int[] arr) {
 
-        if  (arr == null || arr.length == 0) {
+        if (arr == null || arr.length == 0) {
             return 0;
-        }
-        else {
+        } else {
             long multiple = 1;
             for (int i = 0; i < arr.length; i++) {
                 multiple = multiple * arr[i];

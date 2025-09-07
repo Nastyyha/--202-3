@@ -6,12 +6,10 @@ public class Task11Main {
         int[] arr = {7, 5, 9};
         swap(arr);
         System.out.println(java.util.Arrays.toString(arr));
-
     }
 
     static void swap(int[] arr) {
         if (arr == null || arr.length == 0) {
-
         } else {
             int min = arr[0];
             int cnt = 0;
@@ -20,7 +18,6 @@ public class Task11Main {
                     min = arr[i];
                     cnt = i;
                 }
-
             }
             if (cnt != 0) {
                 int temp = arr[0];

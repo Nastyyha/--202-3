@@ -10,18 +10,22 @@ public class Task13Main {
     }
 
     static int[] removeMoreThen1000(int[] arr) {
-        for (int i =0; i< arr.length;i++){
-            if (arr[i]>1000){
-                arr[i] = 0;
-                for (int j=i+1; i< arr.length;i++){
-                    arr[j-1]=arr[j];
-                    arr[j]=0;
+        if (arr == null || arr.length == 0) {
+        }
+        else {
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] > 1000) {
+                    arr[i] = 0;
+                    for (int j = i + 1; i < arr.length; i++) {
+                        arr[j - 1] = arr[j];
+                        arr[j] = 0;
+                    }
                 }
 
             }
         }
 
-        return  arr;
+        return arr;
     }
 
 }

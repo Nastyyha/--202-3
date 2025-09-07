@@ -14,12 +14,11 @@ public class Task12Main {
 
         if (arr == null || arr.length == 0) {
             return;
-        }
-        else {
-            for (int i = 0; i < arr.length-1; i++) {
+        } else {
+            for (int i = 0; i < arr.length - 1; i++) {
                 int min = arr[i];
                 int cnt = 0;
-                for (int j =i+1; j < arr.length; j++) {
+                for (int j = i + 1; j < arr.length; j++) {
                     if (arr[j] < min) {
                         min = arr[j];
                         cnt = j;
